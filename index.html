@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="This website is a part of a project lead by Hafiz Abdullah Anwar. The content in this website is inspired by Spotify.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,200;0,300;0,400;0,500;0,600;0,700;0,800;,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="left ">
+        <div class="header">
+            <div class="CrossCont">
+                <img style="filter: invert(1);" height="30px" src="Images/logo.svg" alt="LOGO">
+                <img style="filter: invert(1);" height="25px" src="Images/cross.png" alt="LOGO">
+            </div>
+            <p class="home">
+                <img style="filter: invert(1);" height="15px" src="Images/home.svg" alt="LOGO">
+                Home
+            </p>
+            <p class="search">
+                <img style="filter: invert(1);" height="15px" src="Images/search.svg" alt="LOGO">
+                Search
+            </p>
+        </div>
+        <div class="footer">
+            <p class="library">
+                <img style="filter: invert(1);" height="25px" src="Images/library.svg" alt="LOGO">
+                Libraty
+            </p>
+            <div class="songsContainer">
+                <p>Chose Any Playlist to get songs</p>
+            </div>
+            <div class="creater">Developed by Abdullah Anwar</div>
+        </div>
+    </div>
+    <div class="right ">
+        <div class="topper">
+            <div class="Ltopper">
+                <img class="npBtn"  height="15px" src="Images/left.svg" alt="LOGO">
+                <img class="npBtn" height="15px" src="Images/right.svg" alt="LOGO">
+                <img class="hide" id="hamburger" height="15px" src="Images/hamburger.png" alt="LOGO">
+            </div>
+            <div class="buttons">
+                <button class="signin">Sign In</button>
+                <button class="login">log In</button>
+            </div>
+        </div>
+
+        <div class="playlist-container">
+            <h1>Spotify Playlists</h1>
+            <div class="playlists">
+
+            </div>
+        </div>
+
+        <div class="playbar">
+            <div class="songTitle">Play a song to its name here</div>
+            <div class="icons">
+                <!-- <img height="15px" id="previoussong" src="Images/previous.svg" alt="LOGO"> -->
+                <img height="15px" id="soundState" src="Images/resume.svg" alt="LOGO">
+                <!-- <img height="15px" id="nextsong" src="Images/next.svg" alt="LOGO"> -->
+            </div>
+            <div class="voice">
+                <img height="20px" src="Images/volume.svg" alt="LOGO">
+                <input type="range" id="volumeControl" min="0" max="1" step="0.01">
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer ></script>
+</body>
+
+</html>

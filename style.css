@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Roboto", "Sans-serif";
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background-color: #000000;
+    color: white;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.left {
+    width: 35%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+
+.right {
+    width: 75%;
+    height: 100%;
+    background-color: #111111;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.header {
+    background-color: #111111;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #111111;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.home {
+    font-size: 12px;
+    font-weight: 500;
+    height: 20px;
+    display: flex;
+    gap: 3px;
+}
+
+.search {
+    font-size: 12px;
+    font-weight: 500;
+    height: 20px;
+    display: flex;
+    gap: 3px;
+}
+
+.library {
+    font-size: 1rem;
+    font-weight: 500;
+    height: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 3px;
+    padding: 40px 0px 25px 20px;
+}
+
+.songsContainer {
+    max-width: 100%;
+    height: calc(100% - 90px);
+    padding: 25px 20px 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    gap: 10px;
+
+}
+
+.creater {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #353534;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.song {
+    border: 1px solid rgba(255, 255, 255, 0.582);
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 0.65rem;
+    overflow: hidden;
+}
+
+.songL {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.song>button {
+    border: none;
+    background: transparent;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.songsContainer::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.songsContainer::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.songsContainer::-webkit-scrollbar-thumb {
+    background-color: #8f8f8fb9;
+    border-radius: 10px;
+}
+
+.topper {
+    height: 64px;
+    background-color: #2b2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.signin {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    color: #ffffff9e;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background: white;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button:hover {
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.playlist-container {
+    max-height: calc(100% - 64px);
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 30px 4px 30px 30px;
+}
+
+.playlists {
+    box-sizing: border-box;
+    height: calc(100% - 15px);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 28px 15px 50px 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.playlist {
+    box-sizing: border-box;
+    min-width: 165px;
+    max-width: 210px;
+    height: 300px;
+    padding: 8px 6px;
+    background-color: #252525;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.85rem;
+    width: auto;
+    flex-grow: 1;
+    flex-basis: 190px;
+    position: relative;
+}
+
+.playlist-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.playlist-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.playlist-container::-webkit-scrollbar-thumb {
+    background-color: #8f8f8fb9;
+    border-radius: 10px;
+}
+
+
+.playlist>img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.playlist>.playlistName {
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.playlist>.playlistDiscription {
+    width: 100%;
+}
+
+.playlist:hover {
+    background-color: #696767;
+}
+
+.playbar {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #192d72;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all 0.25s;
+    opacity: 0.9;
+}
+
+.songTitle {
+    font-size: 0.7rem;
+    height: 100%;
+    width: 25%;
+    align-content: center;
+    overflow: hidden;
+}
+
+.voice {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    width: 20%;
+}
+
+#volumeControl {
+    width: 100%;
+}
+
+.playbar:hover {
+    background-color: #001c79;
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .songTitle {
+        font-size: 0.6rem;
+    }
+
+    .voice {
+        width: 25%;
+    }
+
+    .right {
+        width: 100%;
+    }
+    .playlists{
+        justify-content: center;
+    }
+}
+
+.play {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 15px;
+    background-color: #2bc12b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.16s ease-out;
+    opacity: 0;
+}
+
+
+.home{
+    width: 100%;
+}
+
+
+.hide {
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        width: 100vw;
+    }
+
+    .left {
+        min-width: 100vw;
+
+    }
+
+
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right>.topper button {
+        max-width: 50px;
+        font-size: 0.6rem;
+        height: 30px;
+    }
+
+    .buttons {
+        width: auto;
+    }
+
+    .topper {
+        justify-content: space-between;
+    }
+
+    .playlist-container h1 {
+        font-size: 1.25rem;
+    }
+
+    .playlists>.playlist .playlistName {
+        font-size: 1.25rem;
+    }
+
+    .playlist {
+        height: 280px;
+    }
+
+    .playlist-container {
+        padding: 21px 4px 50px 17px;
+    }
+
+    .icons {
+        width: auto;
+    }
+
+    .voice {
+        width: 35%;
+    }
+
+    .playbar {
+        opacity: 1;
+    }
+
+    .playlist-container::-webkit-scrollbar {
+        width: 0px;
+    }
+    .search{
+        padding: 0px 10px;
+    }
+    
+    
+    
+    .home:active{
+        background-color: #696767;
+        border: 1px solid;
+    }
+
+    .playbar{
+        opacity: 1;
+    }
+    .playbar:hover{
+        opacity: 1;
+    }
+}
+
+.header{
+    height: 25%;
+}
+.home{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    min-height: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.search{
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.CrossCont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
