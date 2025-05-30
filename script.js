@@ -138,7 +138,7 @@ async function showsongs(clickedplaylist) {
                 right.classList.remove("hide")
 
             }
-            ele.querySelector(".playSong").innerHTML = `Playing Now <img height="20px" src="Images/pause.svg" alt="LOGO">`
+            ele.querySelector(".playSong").innerHTML = `Playing Now <img height="20px" src="Images/pause.svg" alt="Internet Issue">`
             document.getElementById("soundState").setAttribute("src", "/images/pause.svg")
             currentAudiocontainer = ele;
             document.getElementsByClassName("songTitle")[0].innerText = ele.getElementsByClassName("songInfo")[0].innerText
